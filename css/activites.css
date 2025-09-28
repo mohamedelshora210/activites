@@ -1,0 +1,325 @@
+:root
+{
+    --text-dark:#2c3e50;
+    --text-light:#5a7f9a;
+    --white:#fff;
+    --color-back:#d6dee3;
+}
+
+.fs-32
+{
+    font-size: 3rem;
+}
+.fs-7 
+{
+    font-size: 12px;
+}
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+nav
+{
+    box-shadow: 0px 0px 5px rgba(0,0,0,.7);
+    .logo
+    {
+        font-size: 1.75rem;
+        color: var(--text-dark);
+    }
+    .navbar-brand:focus, .navbar-brand:hover
+    {
+        color: var(--text-dark);
+    }
+    .logo::before
+    {
+        content: "🎓";
+        font-size: 2rem;
+        margin-left: 5px;
+    }
+    .nav-item
+    {
+        color: var(--text-dark);
+        border-radius: 10px;
+        transition: all .5s;
+    }
+    .nav-link
+    {
+        color: var(--text-dark);
+    }
+    .nav-item:hover
+    {
+        
+        background-color: var(--text-light);
+        color: var(--white);
+    }
+    .nav-item:hover .nav-link
+    {
+        color: var(--white);
+    }
+   .button
+   {
+    .log
+    {
+        background-color: var(--text-light);
+        color: var(--white);
+        &:hover
+        {
+            background-color: var(--text-dark);
+        }
+    }
+    .sign
+    {
+        border: 2px solid var(--text-light);
+        color: var(--text-light);
+        &:hover
+        {
+            background-color: var(--text-light);
+            color: var(--white);
+        }
+    }
+    button{
+        
+        transition: all .3s;
+        &:hover
+        {
+            transform: translateY(-3px);
+        }
+    }
+   }
+}
+header
+{
+    min-height: 50vh;
+    background-image:linear-gradient(rgba(0,0,0,.7) , rgba(0,0,0,.7)) , url(../images/Student-Activities.jpg);
+    background-position: 15% 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .content
+    {
+       h2 
+       {
+        color: gray;
+        font-size: 4rem;
+       }
+       h1
+       {
+        font-size: 3.2rem;
+        color: var(--white);
+        z-index: 1;
+       }
+    }
+    p 
+    {
+        color: var(--color-back);
+    }
+}
+.top
+{
+    width: 30px;
+    height: 30px;
+    background-color: var(--text-dark);
+    color: var(--white);
+    border-radius: 8px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    display: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+#activites
+{
+    background-color: var(--color-back);
+    .content
+    {
+        background-color: var(--white);
+        transition: all .5s;
+
+    .inner 
+    {
+        color: var(--text-dark);
+        span 
+        {
+            background-color: var(--color-back);
+            color: var(--text-light);
+        }
+    }
+
+    .icon
+    {
+        background-color: var(--color-back);
+        border-radius: 15px;
+    }
+    &:hover 
+    {
+        transform: translateY(-5px);
+    }
+    }
+    
+}
+footer
+{
+    background-color: var(--text-dark);
+}
+
+
+
+/*loader*/
+.load
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99999;
+    background-color: var(--text-dark);
+}
+
+.loader {
+  position: relative;
+  width: 120px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: var(--text-light);
+  animation: loading-bounce 0.5s ease-in-out infinite alternate;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 7px;
+  width: 45px;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;
+  animation: loading-step 1s ease-in-out infinite;
+}
+
+@keyframes loading-bounce {
+  0% {
+    transform: scale(1, 0.7);
+  }
+
+  40% {
+    transform: scale(0.8, 1.2);
+  }
+
+  60% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    bottom: 140px;
+  }
+}
+
+@keyframes loading-step {
+  0% {
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
+            0 10px 0 #f2f2f2,
+            -35px 50px 0 #f2f2f2,
+            -70px 90px 0 #f2f2f2;
+  }
+
+  100% {
+    box-shadow: 0 10px 0 #f2f2f2,
+            -35px 50px 0 #f2f2f2,
+            -70px 90px 0 #f2f2f2,
+            -70px 90px 0 rgba(0, 0, 0, 0);
+  }
+}
+   
+
+/*loader*/
+.load
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99999;
+    background-color: var(--text-dark);
+}
+
+.loader {
+  position: relative;
+  width: 120px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: var(--text-light);
+  animation: loading-bounce 0.5s ease-in-out infinite alternate;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 7px;
+  width: 45px;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;
+  animation: loading-step 1s ease-in-out infinite;
+}
+
+@keyframes loading-bounce {
+  0% {
+    transform: scale(1, 0.7);
+  }
+
+  40% {
+    transform: scale(0.8, 1.2);
+  }
+
+  60% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    bottom: 140px;
+  }
+}
+
+@keyframes loading-step {
+  0% {
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
+            0 10px 0 #f2f2f2,
+            -35px 50px 0 #f2f2f2,
+            -70px 90px 0 #f2f2f2;
+  }
+
+  100% {
+    box-shadow: 0 10px 0 #f2f2f2,
+            -35px 50px 0 #f2f2f2,
+            -70px 90px 0 #f2f2f2,
+            -70px 90px 0 rgba(0, 0, 0, 0);
+  }
+}
