@@ -3,7 +3,7 @@
 const icon = document.querySelector(".icon");
 const div = document.querySelector(".input-group ")
 const inputEmail = document.getElementById("emailInput");
-const btn = document.querySelector('.btn');
+
 const form = document.querySelector('form')
 
 form.addEventListener('submit', (e)=>{
@@ -33,9 +33,7 @@ inputEmail.addEventListener("focus" , function(){
 inputEmail.addEventListener("blur" , function(){
     blurInput(icon , div);
 })
-btn.addEventListener('click' , ()=>{
-    location.href='newPassword.html'
-})
+
 $(document).ready(function(){
     setTimeout(() => {
         $('.load').fadeOut(400)

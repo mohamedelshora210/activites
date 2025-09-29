@@ -117,19 +117,7 @@ header
 }
 #club
 {
-
-       .content
-    {
-       h1 
-       {
-        color: #eee;
-        font-size: 3.5rem;
-       }
-       h2 
-       {
-        z-index: 1;
-       }
-       
+     
     }
     .card 
     {
@@ -168,7 +156,7 @@ header
             transform: rotate(45deg) ;
         }
     }
-}
+
 .top
 {
     width: 30px;

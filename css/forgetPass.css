@@ -5,10 +5,84 @@
     --white:#fff;
     --color-back:#d6dee3;
 }
+.h-90
+{
+  height: 95%;
+}
 .container
   {
     width: 65%;
   }
+
+  nav
+{
+    box-shadow: 0px 0px 5px rgba(0,0,0,.7);
+    .logo
+    {
+        font-size: 1.75rem;
+        color: var(--text-dark);
+    }
+    .navbar-brand:focus, .navbar-brand:hover
+    {
+        color: var(--text-dark);
+    }
+    .logo::before
+    {
+        content: "🎓";
+        font-size: 2rem;
+        margin-left: 5px;
+    }
+    .nav-item
+    {
+        color: var(--text-dark);
+        border-radius: 10px;
+        transition: all .5s;
+    }
+    .nav-link
+    {
+        color: var(--text-dark);
+    }
+    .nav-item:hover
+    {
+        
+        background-color: var(--text-light);
+        color: var(--white);
+    }
+    .nav-item:hover .nav-link
+    {
+        color: var(--white);
+    }
+   .button
+   {
+    .log
+    {
+        background-color: var(--text-light);
+        color: var(--white);
+        &:hover
+        {
+            background-color: var(--text-dark);
+        }
+    }
+    .sign
+    {
+        border: 2px solid var(--text-light);
+        color: var(--text-light);
+        &:hover
+        {
+            background-color: var(--text-light);
+            color: var(--white);
+        }
+    }
+    button{
+        
+        transition: all .3s;
+        &:hover
+        {
+            transform: translateY(-3px);
+        }
+    }
+   }
+}
   #logIn
   {
     height: 100vh;
@@ -86,6 +160,11 @@ form .btn:hover
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active
 {
   background-color: var(--text-dark);
+}
+
+footer
+{
+    background-color: var(--text-dark);
 }
 @keyframes animt
 {

@@ -6,7 +6,6 @@ const rgroup = document.querySelector(".rgroup ")
 const group = document.querySelector(".group ")
 const rePasswordInput = document.getElementById("rePasswordInput");
 const passwordInput = document.getElementById("passwordInput");
-const btn = document.querySelector('.btn');
 const form = document.querySelector('form')
 const showPass = document.querySelector("#showPass");
 const reShowPass = document.querySelector("#reShowPass");
@@ -46,23 +45,25 @@ passwordInput.addEventListener("focus" , function(){
 passwordInput.addEventListener("blur" , function(){
     blurInput(icon2 , group);
 })
-btn.addEventListener('click' , ()=>{
-    location.href='logIn.html'
-})
 
-function showPassword(){
-    if(inputPassword.type == "password")
+
+function showPassword(input , button){
+    if(input.type == "password")
     {
-        inputPassword.type="text";
-        showPass.classList.replace("fa-eye" , "fa-eye-slash");
+        input.type="text";
+        button.classList.replace("fa-eye" , "fa-eye-slash");
     }
     else
     {
-        inputPassword.type="password";
-        showPass.classList.replace( "fa-eye-slash" , "fa-eye" );
+        input.type="password";
+        button.classList.replace( "fa-eye-slash" , "fa-eye" );
         
     }
 }
 
-showPass.addEventListener('click' , showPassword)
-reShowPass.addEventListener('click' , showPassword)
+showPass.addEventListener('click' , ()=>{
+    showPassword(passwordInput , showPass)
+})
+reShowPass.addEventListener('click' , ()=>{
+    showPassword(rePasswordInput , reShowPass)
+})

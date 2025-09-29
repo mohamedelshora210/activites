@@ -92,7 +92,7 @@ nav
 header
 {
     min-height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,.7) , rgba(0,0,0,.7)) , url(../images/shutterstock_524844538_0.jpg.webp);
+    background-image:linear-gradient(rgba(0,0,0,.7) , rgba(0,0,0,.7)) , url(../images/collage.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -144,6 +144,7 @@ header
        {
         color: #eee;
         font-size: 3.5rem;
+
        }
        h2 
        {
@@ -188,6 +189,7 @@ header
     }
     .link
     {
+        
         animation: translate .5s infinite alternate;
         a 
         {
